@@ -29,5 +29,7 @@ Android to shift :: Project >1st file e > app folder e click korbo right button 
 
 ## 3104
 
+Firebase > Project overview > Project Setting > nicay gelay > Add Fingerprint > ei kane 3 ta fingerprint add kortay hoibo > 
+
 
     
