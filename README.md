@@ -31,14 +31,13 @@ Android to shift :: Project >1st file e > app folder e click korbo right button 
 
 Firebase > Project overview > Project Setting > নিচে গেলে > Add Fingerprint > এইখানে 3টা fingerprint add করতে হবে > 1টা হলো Debugging-এর জন্য (Testing device এর জন্য) > 2nd টা হলো যখন আমরা generate থেকে build করার পর apk / app bundel করবো > 3 নম্বরটা... Play Store-এ upload করার পর Play Store একটা fingerprint দিয়ে দেয় ঐটা।
 
-Play consol e > Test and release > App signing   ei khane last 2 ta SHA1 (Upload key certificate, app signing key certificate) fingerprint code pai jaibo 
+Play Console এ > Test and release > App signing এইখানে last 2টা SHA1 (Upload key certificate, app signing key certificate) fingerprint code পেয়ে যাবো ।
 
-Test fingerprint :  Android studio > File > Settings থেকে Experimental এর মধ্যে মার্ক করা অপশন টা টিক মার্ক করে তারপর(Already thakle balo) > Gradle > app > Tasks > android >signingReport(Double click ) > SHA1:  etai sei fingerprint > ei fingerprint copy koira firebase e phaste korbo . 
+Test fingerprint: Android Studio > File > Settings থেকে Experimental এর মধ্যে মার্ক করা অপশনটা টিক মার্ক করে তারপর (Already থাকলে ভালো) > Gradle > app > Tasks > android > signingReport (Double click) > SHA1: এটাই সেই fingerprint > এই fingerprint copy করে Firebase এ paste করবো ।
 
+Google এ Search: firebase authentication android : Get Started with Firebase Authentication on Android : https://firebase.google.com/docs/auth/android/start
 
-Search in google : firebase authentication android : Get Started with Firebase Authentication on Android : https://firebase.google.com/docs/auth/android/start
-
-Add Firebase Authentication to your app  :: implementation("com.google.firebase:firebase-auth")   add this library .. ar eger library add kore felci agei .
+Add Firebase Authentication to your app :: implementation("com.google.firebase:firebase-auth") এই library add করবো । আর আগের library add করে ফেলেছি আগেই 
 
 Search in chrome : Credential manager android :: About Credential Manager | Identity  :: https://developer.android.com/identity/sign-in/credential-manager-siwg#declare-dependencies :: 
 
