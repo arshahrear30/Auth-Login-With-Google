@@ -60,5 +60,10 @@ Implement authentication with Sign in with Google:::Authenticate users with Sign
 Declare dependencies - 3টা library add করবো :: googleid click করে <latest version> এ add করবো । 1.1.1 এখন update দেখলাম
 
 
+Firebase Authentication: এটা user-কে track রাখে যে user login করেছে কি না । user-এর name কী, email কী এইগুলো... এইগুলো store করে রাখবে। বারবার login করতে হবে না, auto একে একা বুঝে যাবে।
+
+Google Credential manager: শুধু Google-এর option দেওয়ার জন্য এটা use করি।
+
+
 
     
