@@ -43,4 +43,22 @@ Search in chrome : Credential manager android :: About Credential Manager | Iden
 
 
 
+-if class androidx.credentials.CredentialManager
+-keep class androidx.credentials.playservices.** {
+*;
+}
+
+
+proguard-rules.pro এর মধ্যে নিচে এই line গুলো add করবা:
+
+-if class androidx.credentials.CredentialManager
+-keep class androidx.credentials.playservices.** {
+*;
+}
+Implement authentication with Sign in with Google:::Authenticate users with Sign in with Google::https://developer.android.com/identity/sign-in/credential-manager-siwg#instantiate-sign-in-request
+
+Declare dependencies - 3টা library add করবো :: googleid click করে <latest version> এ add করবো । 1.1.1 এখন update দেখলাম
+
+
+
     
