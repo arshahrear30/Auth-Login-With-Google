@@ -76,3 +76,9 @@ Search: lotte animation android   library add korba.. implementation "com.airbnb
 
 
  res>Android Resorce directory >resorce type(raw) >  online theke lotte file download korci ... raw er modde phaste korci ... 
+
+ ## 3107
+ServerClintID lagbay akon :: Firebase project e jabo > Authentication > Sign in method > Whitelist client IDs from external projects (optional) er pashay ? e  click korlay  Google API Console e click korbo > APIs and services > Credentials > OAuth 2.0 Client IDs > Web client (auto created by Google Service)  e click korbo > Additional information > Client ID ta copy korbo > etai sei ServerClintID
+
+
+ 
