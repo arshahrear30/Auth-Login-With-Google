@@ -72,6 +72,6 @@ Google Credential manager: শুধু Google-এর option দেওয়ার 
 
 ## 3106
 
-
+Search: lotte animation android   library add korba.. implementation "com.airbnb.android:lottie:3.4.0"
 
     
