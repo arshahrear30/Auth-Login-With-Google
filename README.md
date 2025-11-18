@@ -64,6 +64,14 @@ Firebase Authentication: এটা user-কে track রাখে যে user lo
 
 Google Credential manager: শুধু Google-এর option দেওয়ার জন্য এটা use করি।
 
+## 3105
+
+11:30 sec :::: Android studio package e click kori .. >>New >>Activity>>Empty view activity >>Login.java
+
+
+
+## 3106
+
 
 
     
