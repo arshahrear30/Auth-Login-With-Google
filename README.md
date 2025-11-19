@@ -18,7 +18,13 @@ GMAIL + Firebase dia korbo
  builde gradle Root-level mean app name jukto tay add korbo code ta plugins e 
     (app-level) Gradle file  e alias(libs.plugins.android.application)  eita thak but eita remove korbo id 'com.android.application'  beacuse both are same line .. 2nd line firebase theke paibo ar 1st line to android studio tey built in
 
-Library add korbo
+Library add korbo.. but set up ager motoi just akta new library ad korci ... circleimageview library android ... implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+
+
+
+
 
 
 Built > Authentication > Get Started > Sign-in-method > Google > Enable > Support email for project > JSON file ta update hoi gecay >Done >Project overview >Project setting > nicay gele >Download the json file 
@@ -91,6 +97,9 @@ Glide library ta add korbo ..  implementation 'com.github.bumptech.glide:glide:5
 Main activity and login both java nia kaz korbo
   
  
+## Big problem --
+Class er code gula follow kore setup korba . kintu Sign in  e click korley Gmail show kore but activity_main.xml e niya jay na ... 
 
+etar solution update code gula..
 
  
