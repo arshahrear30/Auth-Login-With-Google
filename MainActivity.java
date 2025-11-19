@@ -1,7 +1,9 @@
 package com.arshahrear.authloginwithgoogle;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,18 +14,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
-
-
     TextView tvName, tvEmail;
     ImageView imgProfile;
     Button buttonLogout;
-
     FirebaseAuth firebaseAuth;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +37,17 @@ public class MainActivity extends AppCompatActivity {
 
         firebaseAuth = FirebaseAuth.getInstance();//firebaseAuth ke initialize kore fellam getInstance etar maddome
 
+        buttonLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                firebaseAuth.signOut();
 
-
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
-
     //------------- Mouse Right Button >> Generate >> Overright method(search:onStart) >> onStart method activity launch hower sate sate eka eka kaz kore
 
     @Override
@@ -52,23 +58,22 @@ public class MainActivity extends AppCompatActivity {
 
         if(firebaseUser!=null){
             //There is a user logged in
+            String name = firebaseUser.getDisplayName();
+            String email = firebaseUser.getEmail();
+            Uri profileUri = firebaseUser.getPhotoUrl();
+
+            tvName.setText("Hello, "+name);
+            tvEmail.setText(email);
+
+            Glide.with( MainActivity.this)
+                    .load(profileUri)
+                    .into(imgProfile);
         }else{
-
             //There is no user logged in --> Send him to login page
-
             Intent intent = new Intent(MainActivity.this, Login.class);
             startActivity(intent);
             finish();
-
-
         }
-
     }
-
-
     //-------------
-
-
-
-
 }
