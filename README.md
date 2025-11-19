@@ -78,7 +78,19 @@ Search: lotte animation android   library add korba.. implementation "com.airbnb
  res>Android Resorce directory >resorce type(raw) >  online theke lotte file download korci ... raw er modde phaste korci ... 
 
  ## 3107
-ServerClintID lagbay akon :: Firebase project e jabo > Authentication > Sign in method > Whitelist client IDs from external projects (optional) er pashay ? e  click korlay  Google API Console e click korbo > APIs and services > Credentials > OAuth 2.0 Client IDs > Web client (auto created by Google Service)  e click korbo > Additional information > Client ID ta copy korbo > etai sei ServerClintID
+ServerClintID lagbay akon :: Firebase project e jabo > Authentication > Sign in method >Sign-in providers> Google er pashay edit e click dibo> Whitelist client IDs from external projects (optional) er pashay ? question sign e  click korlay  Google API Console e click korbo > APIs and services > Credentials > OAuth 2.0 Client IDs > Web client (auto created by Google Service)  e click korbo > Additional information > Client ID ta copy korbo > etai sei ServerClintID
+
+ei id ta Andoid studio values > String > 
+<string name="google_Login_ClientId">Client ID ei khane bosabo</string>
+
+Googlecloud e gele obbosai dekbo amar current project tai pick korcay kina
+
+## 3108
+## 3109
+Glide library ta add korbo ..  implementation 'com.github.bumptech.glide:glide:5.0.5'
+Main activity and login both java nia kaz korbo
+  
+ 
 
 
  
