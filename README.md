@@ -100,6 +100,6 @@ Main activity and login both java nia kaz korbo
 ## Big problem --
 Class er code gula follow kore setup korba . kintu Sign in  e click korley Gmail show kore but activity_main.xml e niya jay na ... 
 
-etar solution update code gula..
+etar solution update লিখা code gula..
 
  
